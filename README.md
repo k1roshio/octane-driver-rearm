@@ -28,9 +28,13 @@ The **Rust binary** (`rearm-server`) lives in the [rearm-php](https://github.com
 
 ```bash
 composer require k1roshio/octane-driver-rearm
+php artisan rearm:install-binary
+# or: vendor/bin/rearm-install
 ```
 
-Until the package is on Packagist, you can require this GitHub repo directly:
+Downloads a Linux (`x86_64` / `aarch64`) `rearm-server` from [`k1roshio/rearm-php` releases](https://github.com/k1roshio/rearm-php/releases) into `bin/rearm-server`.
+
+Until Packagist propagates, you can require this GitHub repo directly:
 
 ```json
 {
