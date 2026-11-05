@@ -1,8 +1,8 @@
-# rearm/octane-driver
+# k1roshio/octane-driver-rearm
 
 Laravel Octane driver for **[Rearm](https://github.com/k1roshio/rearm-php)** — a Rust application server for Laravel 12 / PHP 8.5+.
 
-Packagist name: **`rearm/octane-driver`**  
+Packagist name: **`k1roshio/octane-driver-rearm`**  
 GitHub (this repo): **[k1roshio/octane-driver-rearm](https://github.com/k1roshio/octane-driver-rearm)**  
 Author: [k1roshio](https://github.com/k1roshio)
 
@@ -27,7 +27,7 @@ The **Rust binary** (`rearm-server`) lives in the [rearm-php](https://github.com
 ## Install
 
 ```bash
-composer require rearm/octane-driver
+composer require k1roshio/octane-driver-rearm
 ```
 
 Until the package is on Packagist, you can require this GitHub repo directly:
@@ -41,7 +41,7 @@ Until the package is on Packagist, you can require this GitHub repo directly:
     }
   ],
   "require": {
-    "rearm/octane-driver": "dev-main"
+    "k1roshio/octane-driver-rearm": "dev-main"
   }
 }
 ```
@@ -99,7 +99,7 @@ Echo worker (no Laravel, for smoke tests):
 
 ```bash
 REARM_SOCK=/tmp/rearm-echo.sock \
-php vendor/rearm/octane-driver/bin/echo-worker.php
+php vendor/k1roshio/octane-driver-rearm/bin/echo-worker.php
 ```
 
 ## Protocol (summary)

@@ -1,5 +1,5 @@
 {
-    "name": "rearm/octane-driver",
+    "name": "k1roshio/octane-driver-rearm",
     "description": "Laravel Octane driver and MessagePack Unix-socket worker for the Rearm Rust application server",
     "type": "library",
     "license": "MIT",

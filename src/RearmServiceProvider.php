@@ -30,7 +30,7 @@ class RearmServiceProvider extends ServiceProvider
                 RearmStartCommand::class,
             ]);
 
-            // rearm/octane-driver is discovered before laravel/octane alphabetically,
+            // k1roshio/octane-driver-rearm is discovered before laravel/octane alphabetically,
             // so defer octane:start override until all providers have booted.
             $this->app->booted(function () {
                 if ($this->app->runningInConsole()) {
