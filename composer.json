@@ -15,18 +15,15 @@
         "issues": "https://github.com/k1roshio/octane-driver-rearm/issues",
         "source": "https://github.com/k1roshio/octane-driver-rearm"
     },
-    "keywords": [
-        "laravel",
-        "octane",
-        "rearm",
-        "msgpack",
-        "unix-socket"
-    ],
+    "keywords": ["laravel", "octane", "rearm", "msgpack", "unix-socket"],
     "require": {
         "php": "^8.5",
         "illuminate/support": "^12.0",
         "laravel/octane": "^2.0",
         "rybakit/msgpack": "^0.9"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "^11.5"
     },
     "suggest": {
         "ext-msgpack": "Optional pecl-msgpack C extension. This package uses pure-PHP rybakit/msgpack by default so Docker images can add the extension later without code changes."
@@ -35,6 +32,14 @@
         "psr-4": {
             "Rearm\\Octane\\": "src/"
         }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Rearm\\Octane\\Tests\\": "tests/"
+        }
+    },
+    "scripts": {
+        "test": "phpunit"
     },
     "extra": {
         "laravel": {

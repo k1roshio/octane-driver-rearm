@@ -102,6 +102,15 @@ REARM_SOCK=/tmp/rearm-echo.sock \
 php vendor/k1roshio/octane-driver-rearm/bin/echo-worker.php
 ```
 
+## Testing
+
+```bash
+composer install
+composer test
+```
+
+PHPUnit covers MessagePack framing and committed Rust↔PHP wire fixtures under `tests/fixtures/`.
+
 ## Protocol (summary)
 
 - Frame: `[u32 BE length][MessagePack body]`, max 64 MiB
